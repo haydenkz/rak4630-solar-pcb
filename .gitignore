@@ -1,0 +1,22 @@
+# KiCad lock / state files
+~*.lck
+*.lck
+*.kicad_prl
+
+# KiCad local history & backups
+.history/
+*-backups/
+fp-info-cache
+
+# Fabrication outputs
+Gerber/
+gerber/
+build/
+production/
+*.gbr
+*.drl
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
