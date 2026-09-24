@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "meshcore-solar")(type "KiCad")(uri "${KIPRJMOD}/meshcore-solar.pretty")(options "")(descr "Project-local footprints"))
+)

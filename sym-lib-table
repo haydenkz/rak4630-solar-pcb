@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "meshcore-solar")(type "KiCad")(uri "${KIPRJMOD}/meshcore-solar.kicad_sym")(options "")(descr "Project-local symbols"))
+)
