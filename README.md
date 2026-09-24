@@ -17,12 +17,10 @@ Solar-powered MeshCore node PCB built around the **RAK4630-8-SM-I** (nRF52840 + 
 | `meshcore-solar.kicad_sch` | Schematic |
 | `meshcore-solar.kicad_pcb` | PCB layout |
 | `meshcore-solar.pretty/`, `meshcore-solar.3dshapes/` | Project-local footprint (18650 holder) and 3D models |
-| `library-src/` | Generator sources for the holder footprint / 3D model |
-| `scripts/export.sh` | ERC/DRC + JLCPCB outputs (`review` or `fab` mode) into `build/` |
 
 ## Requirements
 - KiCad 10 (file format `generator_version 10.0`)
-- Symbols and footprints are embedded in the design files. The battery holder footprint and 3D model live in the project library (`meshcore-solar.pretty`, `meshcore-solar.3dshapes`); their generator sources are in `library-src/`.
+- Symbols and footprints are embedded in the design files. The battery holder footprint and 3D model live in the project library (`meshcore-solar.pretty`, `meshcore-solar.3dshapes`).
 
 ## Notes
 - Solar panel connects to the PH2.0 `SOLAR IN` connector (P1) → SGM41513 `VAC`.
