@@ -1,0 +1,34 @@
+# MYOUNG BH-18650-B1BA002 (LCSC C2988620), SMT holder for 1x 18650.
+# Source: https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204021730_MYOUNG-BH-18650-B1BA002_C2988620.pdf
+# Top view: "-" contact left, "+" contact right, single 1.57 mm locating peg near the "+" end.
+# (The vendor labels its land pattern "Bottom View", but it matches their top view and the
+#  Keystone 1042 drawing this holder copies; pad 1 = "+" per KiCad battery convention.)
+BatteryHolder_MYOUNG_BH-18650-B1BA002_1x18650:
+  library_name: "meshcore-solar"
+  description: "Battery holder, MYOUNG BH-18650-B1BA002 (LCSC C2988620), SMT, battery type 1x18650"
+  datasheet: "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2204021730_MYOUNG-BH-18650-B1BA002_C2988620.pdf"
+  tags: "horizontal single smd 18650"
+  additional_drawings:
+    polarity_silk:
+      type: text
+      text: "+"
+      size: 2
+      layer: 'F.SilkS'
+      position: [39.63, 12.4]
+      thickness: 0.15
+    polarity_fab:
+      type: text
+      text: "+"
+      size: 2
+      layer: 'F.Fab'
+      position: [34.0, -0.15]
+      thickness: 0.15
+  at: [-38.525, 10.325]
+  size: [77.05, 20.65]
+  smd_tht: "smd"
+  automatic_pin1_mark: False
+  body_size_tolerance: [0.5, 0.3]
+  pins:
+    - ["smd",  "1",  39.63, 0,    7.77, 7.35, 0   ]  # +
+    - ["smd",  "2", -39.63, 0,    7.77, 7.35, 0   ]  # -
+    - ["npth", "",   35.84, -8.00, 2.40, 0,   2.40]  # 1.57 mm locating peg (spec y is flipped: lands at y=+8 in the footprint)
